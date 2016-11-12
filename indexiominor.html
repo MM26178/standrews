@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="indexiostylesheet.css">
+		<title>Explore St Andrews</title>
+<style>
+       #map {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto 0 auto;
+       }
+       #Introduction {
+       	padding-top: 10px
+       }
+     
+</style>
+</head>
+<body>
+
+ <!-- Script for Google Map -->
+    </style>
+  <script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
+	</head>
+	<body>
+
+
+ <!-- Navigation Bar -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">A Day in St Andrews</a>
+      <img alt="Brand" src="images/crest.png">
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#Castle">Castle</a></li>
+        <li><a href="#Cathedral">Cathedral</a></li> 
+        <li><a href="#Quad">Quad</a></li>
+        <li><a href="#Food">A Bite to Eat</a></li>
+        <li><a href="#Things">Things to Know</a></li>
+                  </ul>
+        </div>
+  </div>
+</nav>
+
+ <!-- Slideshow -->
+
+<div class="w3-content w3-display-container" style="max-width:700px">
+  <img class="mySlides" src="images/cathedral4.jpg" style="width:100%">
+  <img class="mySlides" src="images/castle3.jpg" style="width:100%">
+  <img class="mySlides" src="images/st-salvators-quad-st-andrews.jpg" style="width:100%">
+    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+ <!-- Introduction -->
+<div class="row" id="Introduction">
+            <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="lead">
+                        <p class="text-justify">
+                            Welcome to our small guide 'A Day in St Andrews', we hope to give you a snippet of the delights St Andrews has to offer.
+
+                            For more resources, you can peruse Explore Scotland, Historic Scotland and Visit Scotland. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <!-- Comments on the Castle -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Castle">
+    <h2 class="w3-wide">St Andrews' Castle</h2>
+    <p class="w3-opacity"><i>A breathtaking scene</i></p>
+    <p class="w3-justify">This picturesque castle has been standing for almost 1000 years and is rich with history. Once the house of the powerful Bishops of St Andrews it was badly damaged during a siege in 1547 and partially rebuilt in the following years. A wonderful place to explore with the all family it has a small museum at the forefront and an exciting mine carved during the siege which you can all clamber down!</p>
+        <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>The Mine</p>
+        <img src="images/mine1.jpg" class="w3-round w3-margin-bottom" alt="Mine" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Placard</p>
+        <img src="images/info1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>The View</p>
+        <img src="images/view1.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+
+  </div>
+
+ <!-- Comments on the Cathedral -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Cathedral">
+    <h2 class="w3-wide">St Andrews' Cathedral</h2>
+    <p class="w3-opacity"><i>An awe-inspiring ruin</i></p>
+    <p class="w3-justify">This imposing but beautiful cathedral has been dutifully standing watch over Saint Andrews for almost 1000 years, scourged by the Scottish Reformation it remains a testament to the skilled hands of its masons. Feel free to roam the grounds which now is largely a graveyard and climb the impressive tower of St Rule for the best views in Saint Andrews for miles. The small museum and gift shop have a trove of treasures sure to delight all.</p>
+        <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Cathedral Museum</p>
+        <img src="" class="w3-round w3-margin-bottom" alt="cute" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>St Mary on the Rock</p>
+        <img src="images/SMOTR.jpg" class="w3-round w3-margin-bottom" alt="chaopellik" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>St Rule's Tower</p>
+        <img src="" class="w3-round" alt="Viewing" style="width:60%">
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+ <!-- Costing Table -->
+<div class="w3-row w3-container" id="Things">
+  <p>Costs for A Day in St Andrews:</p>
+  <div class="w3-row">
+      <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Adult Ticket Cathedral</p></div>
+    <div class="w3-col l2 s6 w3-white w3-center"><p>£4.50</p></div>
+    <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Adult Ticket Castle</p></div>
+    <div class="w3-col l2 s6 w3-white w3-center"><p>£5.50</p></div>
+    <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Combined Ticket for Castle and Cathedral</p></div>
+    <div class="w3-col l2 s6 w3-white w3-center"><p>£8</p></div>
+    <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>St Salvator's Quadrangle</p></div>
+    <div class="w3-col l2 s6 w3-white w3-center"><p>Free</p></div>
+    <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Food</p></div>
+    <div class="w3-col l2 s6 w3-white w3-center"><p>Your choice!</p></div>
+  </div>
+</div>
+
+
+<div class="container" id="FinalMap">
+  <h2 class="text-center">A Handy Map</h2>
+  </div>
+
+ <!-- Map API -->
+<div id="map"
+	 style="width: 500px;
+	  height: 400px;">
+	  	
+	  </div>
+
+  <script type="text/javascript">
+    var locations = [
+      ['LocCathedral', 56.33954,-2.7903365, 3],
+      ['LocCastle', 56.3418826,-2.7917687, 2],
+      ['LocQuad', 56.341717, -2.794148, 1]
+      
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: new google.maps.LatLng(56.340358, -2.794042),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
+
+
+
+
+</body>
+</html>
