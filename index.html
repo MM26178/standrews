@@ -6,27 +6,32 @@
 <link rel="stylesheet" href="indexiostylesheet.css">
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmWjLeMd_S3ebQMKAcG8NRsiF5Id7AOIg" 
           type="text/javascript"></script>
+.navbar-fixed-top {
+  top: -70px; /* you'll have to figure out the exact number here */
+}
+
+
 		<title>Explore St Andrews</title>
 
 </head>
 <body>
 
- 
-
-  
-
-
- <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-inverse">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">A Day in St Andrews</a>
+      <a class="navbar-brand" href="#Home">A Day in St Andrews</a>
       <img alt="Brand" src="images/crest.png">
 
     </div>
@@ -42,10 +47,11 @@
         </div>
   </div>
 </nav>
+<p style="padding: 15px 10px 15px 10px"></p>
 
  <!-- Slideshow -->
 
-<div class="w3-content w3-display-container" style="max-width:700px">
+<div class="w3-content w3-display-container" id="Home" style="max-width:700px">
   <img class="mySlides" src="images/cathedral4.jpg" style="width:100%">
   <img class="mySlides" src="images/castle3.jpg" style="width:100%">
   <img class="mySlides" src="images/st-salvators-quad-st-andrews.jpg" style="width:100%">
@@ -119,7 +125,7 @@ function showDivs(n) {
         <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Cathedral Museum</p>
-        <img src="" class="w3-round w3-margin-bottom" alt="cute" style="width:60%">
+        <img src="images/sacm1.jpg" class="w3-round w3-margin-bottom" alt="cute" style="width:60%">
       </div>
       <div class="w3-third">
         <p>St Mary on the Rock</p>
@@ -127,7 +133,7 @@ function showDivs(n) {
       </div>
       <div class="w3-third">
         <p>St Rule's Tower</p>
-        <img src="" class="w3-round" alt="Viewing" style="width:60%">
+        <img src="images/srt1.jpg" class="w3-round" alt="Viewing" style="width:60%">
       </div>
     </div>
 
