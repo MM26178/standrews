@@ -4,23 +4,25 @@
 	<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="indexiostylesheet.css">
+
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmWjLeMd_S3ebQMKAcG8NRsiF5Id7AOIg" 
           type="text/javascript"></script>
 .navbar-fixed-top {
-  top: -70px; /* you'll have to figure out the exact number here */
+  top: -70px;
+  text-align: center
 }
+
+ <!-- Credits to ww3 -->
 
 
 		<title>Explore St Andrews</title>
+}
 
 </head>
 <body>
 
   <!-- Navigation Bar -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -88,7 +90,7 @@ function showDivs(n) {
                         <p class="text-justify">
                             Welcome to our small guide 'A Day in St Andrews', we hope to give you a snippet of the delights St Andrews has to offer.
 
-                            For more resources, you can peruse Explore Scotland, Historic Scotland and Visit Scotland. 
+                            For more resources, you can peruse <a href="http://www.explore-st-andrews.com" id="ExploreScotland"> Explore Scotland</a>, <a href="http://www.st-andrews.ac.uk" id="UniWebsite">the University of St Andrews</a> and <a href="https://www.visitscotland.com/info/towns-villages/st-andrews-p238911" id="VisitScotland"> Visit Scotland</a>. 
                         </p>
                     </div>
                 </div>
@@ -97,7 +99,7 @@ function showDivs(n) {
 
   <!-- Comments on the Castle -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Castle">
-    <h2 class="w3-wide">St Andrews' Castle</h2>
+    <h2 class="w3-wide">St Andrews Castle</h2>
     <p class="w3-opacity"><i>A breathtaking scene</i></p>
     <p class="w3-justify">This picturesque castle has been standing for almost 1000 years and is rich with history. Once the house of the powerful Bishops of St Andrews it was badly damaged during a siege in 1547 and partially rebuilt in the following years. A wonderful place to explore with the all family it has a small museum at the forefront and an exciting mine carved during the siege which you can all clamber down!</p>
         <div class="w3-row w3-padding-32">
@@ -114,12 +116,11 @@ function showDivs(n) {
         <img src="images/view1.jpg" class="w3-round" alt="Random Name" style="width:60%">
       </div>
     </div>
-
   </div>
 
  <!-- Comments on the Cathedral -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Cathedral">
-    <h2 class="w3-wide">St Andrews' Cathedral</h2>
+    <h2 class="w3-wide">St Andrews Cathedral</h2>
     <p class="w3-opacity"><i>An awe-inspiring ruin</i></p>
     <p class="w3-justify">This imposing but beautiful cathedral has been dutifully standing watch over Saint Andrews for almost 1000 years, scourged by the Scottish Reformation it remains a testament to the skilled hands of its masons. Feel free to roam the grounds which now is largely a graveyard and climb the impressive tower of St Rule for the best views in Saint Andrews for miles. The small museum and gift shop have a trove of treasures sure to delight all.</p>
         <div class="w3-row w3-padding-32">
@@ -136,16 +137,48 @@ function showDivs(n) {
         <img src="images/srt1.jpg" class="w3-round" alt="Viewing" style="width:60%">
       </div>
     </div>
-
   </div>
 
+<!-- Comments on the Quad -->
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Quad">
+    <h2 class="w3-wide">St Salvator's Quad</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">St Salvator’s Quad, or Sallies Quad as it is affectionately called by students, lies at the heart of the town centre and is an important and historic site, with the adjacent chapel and lecture theatres. The annual Raisin foam fight has took place here before it moved to Lower College Lawn in 2014.
+</p>
+ <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="images/st-salvators-quad-st-andrews.jpg" class="w3-round w3-margin-bottom img-fluid" alt="quadview" style="width:60%">
+      </div>
+      <div class="w3-third">
+         <img src="images/lcup1.jpg" class="w3-round w3-margin-bottom img-fluid" alt="lowuppercollege" style="width:60%">
+      </div>
+      <div class="w3-third">
+         <img src="images/hcoa1.jpg" class="w3-round w3-margin-bottom img-fluid" alt="CoatofArms" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+<!-- Comments on the Food -->
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Food">
+    <h2 class="w3-wide">Restaurants in St Andrews</h2>
+    <p class="w3-opacity"><i>A fine selection</i></p>
+    <p class="w3-justify">St Andrews is not short on choice for great places to eat. Why not visit William and Kate's favourite coffee spot at North Point Cafe, just opposite the Castle? Or try haggis at Forgan's for the essential Scottish experience? If you want something cheaper how about popping to our award-winning Fish and Chip restaurant Cromars,  just opposite the Quad.</p>  
+
+<!-- Seperating Image -->
+
+<div class="container" id="ImageGo">
+  <div text-align="center">
+    <img src="images/wsands1.jpg" class="img-circle img-responsive" alt="WSandsFail"  style="padding-bottom: 30px" width="30%" height="30%">
+    </div>
+</div>
 
 
 
   <!-- Costing Table -->
 <div class="w3-row w3-container" id="Things">
-  <p>Costs for A Day in St Andrews:</p>
-  <div class="w3-row">
+    <div class="w3-row" align="center">
       <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Adult Ticket Cathedral</p></div>
     <div class="w3-col l2 s6 w3-white w3-center"><p>£4.50</p></div>
     <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Adult Ticket Castle</p></div>
@@ -159,12 +192,13 @@ function showDivs(n) {
   </div>
 </div>
 
+ <!-- Map API --> 
+<p>
 
- <div class="container" id="FinalMap">
-  <h2 class="text-center">A Handy Map</h2>
-  </div>
 
- <!-- Map API -->
+
+
+</p>
 <div id="map"
 	 style="width: 500px;
 	  height: 400px;
@@ -206,8 +240,8 @@ function showDivs(n) {
   </script>
 
 
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
