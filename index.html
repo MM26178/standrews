@@ -1,10 +1,11 @@
+ <!-- Maddy -->
 <!DOCTYPE html>
 <html>
-	<head>
-	<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+  <head>
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="indexiostylesheet.css">
-
+<body onunload="Map()">
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmWjLeMd_S3ebQMKAcG8NRsiF5Id7AOIg" 
           type="text/javascript"></script>
 .navbar-fixed-top {
@@ -15,14 +16,16 @@
  <!-- Credits to ww3 -->
 
 
-		<title>Explore St Andrews</title>
+    <title>Explore St Andrews</title>
 }
 
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar Maddy -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+ 
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -51,7 +54,7 @@
 </nav>
 <p style="padding: 15px 10px 15px 10px"></p>
 
- <!-- Slideshow -->
+ <!-- Slideshow Maddy -->
 
 <div class="w3-content w3-display-container" id="Home" style="max-width:700px">
   <img class="mySlides" src="images/cathedral4.jpg" style="width:100%">
@@ -81,7 +84,7 @@ function showDivs(n) {
 }
 </script>
 
- <!-- Introduction -->
+ <!-- Introduction  Maddy, Link Maddy & Sofie-->
 <div class="row" id="Introduction" style="padding-top: 10px">
             <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
                 <div class="panel panel-default">
@@ -97,7 +100,7 @@ function showDivs(n) {
             </div>
         </div>
 
-  <!-- Comments on the Castle -->
+  <!-- Comments on the Castle Maddy -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Castle">
     <h2 class="w3-wide">St Andrews Castle</h2>
     <p class="w3-opacity"><i>A breathtaking scene</i></p>
@@ -118,7 +121,7 @@ function showDivs(n) {
     </div>
   </div>
 
- <!-- Comments on the Cathedral -->
+ <!-- Comments on the Cathedral Maddy -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Cathedral">
     <h2 class="w3-wide">St Andrews Cathedral</h2>
     <p class="w3-opacity"><i>An awe-inspiring ruin</i></p>
@@ -139,7 +142,7 @@ function showDivs(n) {
     </div>
   </div>
 
-<!-- Comments on the Quad -->
+<!-- Comments on the Quad Sofie-->
 
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Quad">
     <h2 class="w3-wide">St Salvator's Quad</h2>
@@ -159,7 +162,7 @@ function showDivs(n) {
     </div>
   </div>
 
-<!-- Comments on the Food -->
+<!-- Comments on the Food Sofie & Maddy -->
 
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Food">
     <h2 class="w3-wide">Restaurants in St Andrews</h2>
@@ -176,7 +179,7 @@ function showDivs(n) {
 
 
 
-  <!-- Costing Table -->
+  <!-- Costing Table Maddy -->
 <div class="w3-row w3-container" id="Things">
     <div class="w3-row" align="center">
       <div class="w3-col l10 s6 w3-dark-grey w3-center"><p>Adult Ticket Cathedral</p></div>
@@ -192,7 +195,7 @@ function showDivs(n) {
   </div>
 </div>
 
- <!-- Map API --> 
+ <!-- Map API Maddy --> 
 <p>
 
 
@@ -200,13 +203,14 @@ function showDivs(n) {
 
 </p>
 <div id="map"
-	 style="width: 500px;
-	  height: 400px;
-	  margin: 0 auto 0 auto">
-	  	
-	  </div>
+   style="width: 500px;
+    height: 400px;
+    margin: 0 auto 0 auto">
+      
+    </div>
 
-  <script type="text/javascript">
+  <script type="text/javascript" id="ELI5">
+  function map(){
     var locations = [
       ['LocCathedral', 56.33954,-2.7903365, 3],
       ['LocCastle', 56.3418826,-2.7917687, 2],
@@ -237,11 +241,14 @@ function showDivs(n) {
         }
       })(marker, i));
     }
+  }
   </script>
+ <!--Please insert social media buttons here Sofie --> 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- Scripts at bottom of page to load faster Maddy --> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -250,8 +257,6 @@ function showDivs(n) {
 
   ga('create', 'UA-87378123-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-
 </body>
 </html>
